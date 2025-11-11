@@ -1,45 +1,32 @@
-# Miscellaneous
-*.class
-*.log
-*.pyc
-*.swp
-.DS_Store
-.atom/
-.build/
-.buildlog/
-.history
-.svn/
-.swiftpm/
-migrate_working_dir/
+# ABAIKAN SEMUA FILE DAN FOLDER SECARA DEFAULT
+*
 
-# IntelliJ related
-*.iml
-*.ipr
-*.iws
-.idea/
+# IZINKAN (KECUALIKAN DARI PENGABAIAN) FILE YANG DIBUTUHKAN
 
-# The .vscode folder contains launch configuration and tasks you configure in
-# VS Code which you may wish to be included in version control, so this line
-# is commented out by default.
-#.vscode/
+# File inti proyek yang harus dipertahankan
+!/pubspec.yaml
+!/pubspec.lock
+!/analysis_options.yaml
 
-# Flutter/Dart/Pub related
-**/doc/api/
-**/ios/Flutter/.last_build_id
+# Folder kode utama
+!/lib/**
+
+# File konfigurasi Git/Readme
+!/README.md
+!.gitignore
+
+# KECUALIKAN SECARA EKSPLISIT (UNTUK MENGHINDARI KONFLIK)
+# File/folder yang mungkin tersembunyi atau sudah ada di daftar 'abaikan semua'
 .dart_tool/
+.flutter-plugins
 .flutter-plugins-dependencies
-.pub-cache/
-.pub/
-/build/
-/coverage/
-
-# Symbolication related
-app.*.symbols
-
-# Obfuscation related
-app.*.map.json
-
-# Android Studio will place build artifacts here
-/android/app/debug
-/android/app/profile
-/android/app/release
+.packages
+.vs/
+.vscode/
+build/
+android/
+ios/
+linux/
+macos/
+web/
+windows/
